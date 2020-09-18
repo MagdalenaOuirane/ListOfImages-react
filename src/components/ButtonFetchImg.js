@@ -3,12 +3,17 @@ import Button from 'react-bootstrap/Button';
 
 
 
-const ButtonFetchImg = () => {
+const ButtonFetchImg = ({ paginate, currentPage }) => {
 
+
+    const number = currentPage + 1;
 
     return (
-        <Button style={{ marginBottom: '20px', width: '100px' }} variant="danger" >Next</Button>
+        <Button onClick={() => paginate(number)} key={number} style={{ marginBottom: '20px', width: '100px' }} variant="danger" >Next
+        </Button>
     )
+
+
 };
 
 

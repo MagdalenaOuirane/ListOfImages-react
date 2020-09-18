@@ -28,12 +28,13 @@ const App = () => {
 
 
 
-  //get current Cards
+  //get current Images
   const indexOfLastCard = currentPage * numberOfCardsPerPage;
   const indexOfFirstCard = indexOfLastCard - numberOfCardsPerPage;
   const currentCards = imagesList.slice(indexOfFirstCard, indexOfLastCard);
 
-  
+  //change page
+  const paginate = (pageNumber) => setcurrentPage(pageNumber);
 
   return (
 
@@ -46,7 +47,8 @@ const App = () => {
 
       <Container>
 
-        <ButtonFetchImg numberOfCardsPerPage={numberOfCardsPerPage}  />
+        <ButtonFetchImg paginate={paginate}
+          currentPage={currentPage} />
         <MainBoard imagesList={currentCards} />
 
       </Container>
@@ -59,3 +61,4 @@ const App = () => {
 
 
 export default App;
+
