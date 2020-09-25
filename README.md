@@ -1,22 +1,22 @@
-# ListOfImages-react
+# ListOfImages React
 
-ListOfImages it is a react application that fetches list of images and display first 3 of them in the app using button "Next" . To create that project I used react technology and react-bootstrap.
+ListOfImages is a [React](https://github.com/facebook/react) application that fetches list of images and displays first three in the app using the "Next" button.
+To create this project I used React technology and [React-Bootstrap](https://github.com/react-bootstrap/react-bootstrap).
 
+### Installation
 
-## Install and run the app:
+Install dependencies using the command below.
 
-1. Install all dependencies using the command below:
+```bash
+yarn install
+```
 
- ```yarn install```  
+### Usage
  
- 
-2. To start the app, run the command:
+To start the app run the following command.
 
-  ```yarn start```
+```bash
+yarn start
+```
 
-The application should be displayed automatically and this is the local address:
-
-
- ```http://localhost:300/```
-
-
+The application should be displayed automatically, this is the local address: `http://localhost:300/`
