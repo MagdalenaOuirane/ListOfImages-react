@@ -15,7 +15,7 @@ const MainBoard = ({imagesList}) => {
 
           return (
             <Col key={imageList.id} className="mb-3">
-              <Card border="info" style={{ width: '15rem', height: '34rem' }}>
+              <Card border="info">
               <Card.Title>{id}</Card.Title>
                 <Card.Img  variant="top" src={download_url} />
                 <Card.Body>
